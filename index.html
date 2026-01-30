@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="23年の現場経験とIT知識を融合させるエンジニアのポートフォリオサイトです。映画館でのマネジメント・システム運用経験を活かし、新たな価値を創造します。">
+    <meta name="robots" content="noindex">
+    <title>中西栄介のポートフォリオ - Film Theme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/film-style.css">
+</head>
+
+<body>
+    <!-- ナビゲーション -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <ul id="nav-menu">
+                <li><a href="#home"><i class="fas fa-ticket-alt"></i> ホーム</a></li>
+                <li><a href="#about"><i class="fas fa-id-card"></i> About</a></li>
+                <li><a href="#certifications"><i class="fas fa-award"></i> 資格</a></li>
+                <li><a href="#works"><i class="fas fa-clapperboard"></i> 制作物</a></li>
+                <li><a href="#experience"><i class="fas fa-scroll"></i> 業務経験</a></li>
+                <li><a href="#contact"><i class="fas fa-paper-plane"></i> Contact</a></li>
+            </ul>
+            <button id="hamburger" onclick="toggleMenu()" aria-label="メニューを開閉" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- トップ画面 -->
+    <section id="home">
+        <div class="container">
+            <h1>ビジネスとITの架け橋</h1>
+            <p class="subtitle">23年の現場経験 × IT知識</p>
+            <p>映画館での長年のシステム運用とマネジメント経験を活かし、</p>
+            <p>SE職として新たな挑戦を始めます。</p>
+            <a href="#about" class="button">詳しく見る</a>
+        </div>
+    </section>
+
+    <!-- 自己紹介 -->
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+
+            <h3>職務要約</h3>
+            <p>学生時代のアルバイトを含め、23年間映画館での接客業に従事してきました。2006年からは支配人代行、2011年からは副支配人を務め、アルバイトの採用から売上管理、お客様への接客まで、店舗運営全般に携わってきました。
+            </p>
+
+            <h3>現在の取り組み</h3>
+            <p>2024年4月より盛岡情報ビジネス＆デザイン専門学校でITの専門知識を学んでいます。チーム開発プロジェクトを通じて技術面だけでなく、チームで協力して目標を達成することの重要性も再認識しました。</p>
+
+            <h3>強み</h3>
+            <ul>
+                <li>新人に教育できるレベルの接客・販売スキル</li>
+                <li>リピーター増、新規顧客開拓のための営業的スタンスと行動</li>
+                <li>店舗経営にかかわるマネジメント全般</li>
+                <li>チケットシステム・上映サーバーの運用保守経験</li>
+                <li>「システムが止まれば、ビジネスも止まる」という危機感に基づく迅速な対応力</li>
+            </ul>
+
+            <h3>実績</h3>
+            <div class="achievements">
+                <div class="achievement">
+                    <img src="images/ムービーの映画フィルムロールアイコン.jpeg" alt="フィルムリール" class="achievement-icon">
+                    <div class="number">1億円</div>
+                    <div class="label">年間売上達成</div>
+                </div>
+                <div class="achievement">
+                    <img src="images/ポップコーンのアイコン素材.png" alt="ポップコーン" class="achievement-icon">
+                    <div class="number">40%削減</div>
+                    <div class="label">販売管理費（年間1200万円）</div>
+                </div>
+                <div class="achievement">
+                    <img src="images/映写機のアイコン素材.png" alt="映写機" class="achievement-icon">
+                    <div class="number">25名</div>
+                    <div class="label">マネジメント経験</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 取得資格 -->
+    <section id="certifications">
+        <div class="container">
+            <h2>取得資格</h2>
+
+            <h3 class="category-title">IT関連資格</h3>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="icon"><i class="fas fa-desktop"></i></div>
+                    <h4>基本情報技術者試験</h4>
+                    <p class="status">取得中</p>
+                    <p class="date"><time datetime="2026">2026年</time></p>
+                </div>
+                <div class="cert-card">
+                    <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>情報セキュリティマネジメント</h4>
+                    <p class="status">取得中</p>
+                    <p class="date"><time datetime="2026">2026年</time></p>
+                </div>
+                <div class="cert-card">
+                    <div class="icon"><i class="fas fa-brain"></i></div>
+                    <h4>G検定（JDLA Deep Learning for GENERAL）</h4>
+                    <p class="status completed">取得済み</p>
+                    <p class="date"><time datetime="2025-11">2025年11月</time></p>
+                </div>
+                <div class="cert-card">
+                    <div class="icon"><i class="fas fa-laptop"></i></div>
+                    <h4>ITパスポート</h4>
+                    <p class="status completed">取得済み</p>
+                    <p class="date"><time datetime="2024-12">2024年12月</time></p>
+                </div>
+                <div class="cert-card">
+                    <div class="icon"><i class="fas fa-file-alt"></i></div>
+                    <h4>情報検定 システムエンジニア認定</h4>
+                    <p class="status completed">取得済み</p>
+                    <p class="date"><time datetime="2024-09">2024年9月</time></p>
+                </div>
+                <div class="cert-card">
+                    <div class="icon"><i class="fas fa-file-alt"></i></div>
+                    <h4>情報検定 プログラマ認定</h4>
+                    <p class="status completed">取得済み</p>
+                    <p class="date"><time datetime="2024-09">2024年9月</time></p>
+                </div>
+            </div>
+
+            <h3 class="category-title">プログラミング関連資格</h3>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="icon"><i class="fab fa-java"></i></div>
+                    <h4>Javaプログラミング能力認定試験 3級</h4>
+                    <p class="status completed">取得済み</p>
+                    <p class="date"><time datetime="2025-06">2025年6月</time></p>
+                </div>
+                <div class="cert-card">
+                    <div class="icon"><i class="fab fa-python"></i></div>
+                    <h4>Pythonプログラミング能力認定試験 3級</h4>
+                    <p class="status completed">取得済み</p>
+                    <p class="date"><time datetime="2024-12">2024年12月</time></p>
+                </div>
+            </div>
+
+            <h3 class="category-title">その他資格</h3>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="icon"><i class="fas fa-utensils"></i></div>
+                    <h4>調理師免許</h4>
+                    <p class="status completed">取得済み</p>
+                    <p class="date"><time datetime="2017-07">2017年7月</time></p>
+                </div>
+                <div class="cert-card">
+                    <div class="icon"><i class="fas fa-car"></i></div>
+                    <h4>中型自動車第一種免許（8t限定）</h4>
+                    <p class="status completed">取得済み</p>
+                    <p class="date"><time datetime="2001-09">2001年9月</time></p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- 制作物 -->
+    <section id="works">
+        <div class="container">
+            <h2>制作物</h2>
+            <div class="works-grid">
+                <div class="work-card">
+                    <div class="work-image film-frame">
+                        <img src="images/project1.png" alt="MCL学園祭 店舗紹介アプリ">
+                    </div>
+                    <div class="work-content">
+                        <h3>MCL学園祭 店舗紹介アプリ</h3>
+                        <p>学園祭時に作成した店舗紹介アプリケーション。緯度経度からマップ上にマーカーを配置して店舗位置を表示し、マーカークリックで店舗詳細・商品・値段を確認できます。コメント機能も実装し、来場者が見やすいUI設計を重視。QRコード配布により、スマホで見ながら店舗を巡れる仕組みを実現しました。
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQLite3</span>
+                            <span class="tag">Tkinter</span>
+                            <span class="tag">Folium</span>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/eisuke-nakanishi-4243121/school_festival" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image film-frame">
+                        <div class="image-slideshow">
+                            <img src="images/project2-1.png" alt="チーム分けアプリ 画面1">
+                            <img src="images/project2-2.png" alt="チーム分けアプリ 画面2">
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3>チーム分けアプリ</h3>
+                        <p>メンバーの希望を考慮しながら、チームに自動で振り分けるアプリケーション。Excelファイルからメンバー情報を読み込み、希望チームを優先的に配置。希望なしのメンバーはランダムに振り分け、結果をExcelファイルに出力します。
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">openpyxl</span>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/eisuke-nakanishi-4243121/jyobifes_app" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image film-frame">
+                        <div class="image-slideshow">
+                            <img src="images/project3-1.png" alt="じょびランチ 画面1">
+                            <img src="images/project3-2.png" alt="じょびランチ 画面2">
+                            <img src="images/project3-3.png" alt="じょびランチ 画面3">
+                            <img src="images/project3-4.png" alt="じょびランチ 画面4">
+                            <img src="images/project3-5.png" alt="じょびランチ 画面5">
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3>じょびランチ</h3>
+                        <p>モリジョビ生向けのランチスポット検索Androidアプリ。スクラムマスターとしてチームメンバーと共に試行錯誤を重ね、意見を出し合いながら開発を進めました。
+                            地図上で学校周辺の飲食店を確認し、口コミやお気に入り機能で店舗を探せます。Google認証による学生限定アクセス、HotPepper API連携で実際の飲食店データを使用。
+                            3ヶ月間チーム一丸となって完成させました。</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Kivy</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">HotPepper API</span>
+                            <span class="tag">HeartRails Geo API</span>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/2025-ajail-develop-class/final-assignment-teamsugata"
+                                target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>
+                                GitHub <i class="fas fa-lock"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image film-frame">
+                        <div class="image-slideshow">
+                            <img src="images/project4-1.png" alt="通貨両替アプリ ログイン画面">
+                            <img src="images/project4-2.png" alt="通貨両替アプリ メイン画面">
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3>通貨両替シミュレーションアプリ</h3>
+                        <p>JavaFXとSQLiteを使用した為替レート両替計算デスクトップアプリケーション。
+                            Frankfurter APIを使用したリアルタイム為替レート取得、ログイン認証機能（SHA-256ハッシュ化）、
+                            お気に入り通貨ペアの保存機能を実装。SQLインジェクション対策としてPreparedStatementを使用し、
+                            セキュリティにも配慮した設計です。</p>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">JavaFX</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Frankfurter API</span>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/eisuke-nakanishi-4243121/currency_exchange" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-github"></i>
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 業務経験 -->
+    <section id="experience">
+        <div class="container">
+            <h2>業務経験・課題解決事例</h2>
+
+            <div class="timeline film-timeline">
+                <div class="timeline-item">
+                    <span class="seat-number">A-1</span>
+                    <div class="date">2002年4月 ～ 2006年11月</div>
+                    <div class="content">
+                        <h3>南部興行 盛岡ピカデリー・名劇1・2・盛岡ルミエール1・2</h3>
+                        <ul>
+                            <li>
+                                <strong>接客・販売・上映管理業務</strong>
+                                <p>チケット・売店・映写担当として接客・販売・上映管理業務を担当。</p>
+                            </li>
+                            <li>
+                                <strong>営業活動</strong>
+                                <p>自社映画案内フリーペーパーの配布、新規開拓を行う。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="seat-number">B-2</span>
+                    <div class="date">2006年11月 ～ 2010年1月</div>
+                    <div class="content">
+                        <h3>南部興行 ルミエール秋田（支配人代行）</h3>
+                        <p class="role">社員3名 パート・アルバイト20名をマネジメント</p>
+                        <ul>
+                            <li>
+                                <strong>年間売上1億円達成（予算比100%、対前年比120%）</strong>
+                                <p>配給会社との交渉により競合館との作品争奪戦を制し、話題作の上映権を獲得。この作品選定の成功を軸に、売店強化とリピーター制度を推進。結果、前年比120%の売上を達成。
+                                </p>
+                            </li>
+                            <li>
+                                <strong>顧客満足度向上施策</strong>
+                                <p>お客様に寄り添う接客をスタッフに教育し、来場しやすい環境づくりを推進。競合店との差別化を図る作品選定により、固定客の増加に成功。</p>
+                            </li>
+                            <li>
+                                <strong>システム管理</strong>
+                                <p>チケットシステム・上映サーバーネットワークの管理、保守を実施。障害発生時の迅速な復旧対応。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="seat-number">C-3</span>
+                    <div class="date">2010年1月 ～ 2011年4月</div>
+                    <div class="content">
+                        <h3>南部興行 盛岡ピカデリー・盛岡ルミエール1・2</h3>
+                        <ul>
+                            <li>
+                                <strong>フリーペーパー設置店舗の拡大</strong>
+                                <p>自社映画案内フリーペーパーの設置店舗を拡大（前年対比200%）。</p>
+                            </li>
+                            <li>
+                                <strong>上映案内チラシの新規作成</strong>
+                                <p>新規に上映案内チラシを作成し配布を開始。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="seat-number">D-4</span>
+                    <div class="date">2011年4月 ～ 2020年6月</div>
+                    <div class="content">
+                        <h3>南部興行 ルミエール秋田（副支配人）</h3>
+                        <p class="role">社員1名 パート・アルバイト25名をマネジメント</p>
+                        <ul>
+                            <li>
+                                <strong>販売管理費40%削減（年間1200万円削減）</strong>
+                                <p>パート・アルバイトの作業ローテーションを個々の能力とシフトに基づき最適化。業務効率を維持しながら大幅なコスト削減を実現。</p>
+                            </li>
+                            <li>
+                                <strong>貸館業務の展開</strong>
+                                <p>映画上映だけでなく、ヘアショー、落語、セミナーなど多様なイベントでの施設利用を推進し、新たな収益源を確保。</p>
+                            </li>
+                            <li>
+                                <strong>システム運用・保守</strong>
+                                <p>チケットシステム・上映サーバーネットワークの管理・保守を担当。トラブル発生時の迅速な対応により、上映中断を最小限に抑制。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="seat-number">E-5</span>
+                    <div class="date">2020年5月 ～ 2023年10月</div>
+                    <div class="content">
+                        <h3>南部興行 盛岡ピカデリー・盛岡ルミエール（副支配人）</h3>
+                        <ul>
+                            <li>
+                                <strong>フリーWi-Fi設置と運用</strong>
+                                <p>お客様の利便性向上のため、フリーWi-Fiを設置・運用。ネットワーク構築から運用管理まで担当。</p>
+                            </li>
+                            <li>
+                                <strong>経理補助業務</strong>
+                                <p>請求書の作成・送付、会計ソフトへのデータ入力など、バックオフィス業務も担当。</p>
+                            </li>
+                            <li>
+                                <strong>接客・販売・上映管理</strong>
+                                <p>チケット・売店・映写担当として、日々の運営業務を遂行。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="seat-number">F-6</span>
+                    <div class="date">2024年4月 ～ 2026年3月（卒業見込み）</div>
+                    <div class="content">
+                        <h3>MCL 盛岡情報ビジネス＆デザイン専門学校</h3>
+                        <ul>
+                            <li>
+                                <strong>副委員長、学園祭実行委員、オープンキャンパススタッフを兼任</strong>
+                                <p>学園祭実行委員として、チームの調整役・推進役を担い、円滑なイベント運営を実現。</p>
+                            </li>
+                            <li>
+                                <strong>チーム開発プロジェクト</strong>
+                                <p>技術面だけでなく、「どのように立ち回れば仲間に貢献できるか」という視点の重要性を再認識。</p>
+                            </li>
+                            <li>
+                                <strong>就活イベント参加</strong>
+                                <p>ジョブフェスでの設営・撤去作業に参加し、イベント運営をサポート。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3>システムトラブル解決事例</h3>
+            <div class="case-grid">
+                <div class="case-card">
+                    <h4>チケット発券システム障害</h4>
+                    <p><strong>状況：</strong>週末の混雑時にチケット発券システムがダウン。お客様が列を作っている状況。</p>
+                    <p><strong>対応：</strong>即座にバックアップ端末に切り替え、システムベンダーに連絡。並行して手動発券の準備を開始。</p>
+                    <p><strong>結果：</strong>10分以内に復旧し、お客様への影響を最小限に抑えた。</p>
+                </div>
+
+                <div class="case-card">
+                    <h4>上映サーバーネットワーク障害</h4>
+                    <p><strong>状況：</strong>上映開始直前に上映機器とサーバーの通信が途絶。上映が開始できない状態。</p>
+                    <p><strong>対応：</strong>ネットワーク機器の再起動、ケーブル接続確認を実施。問題箇所を特定し、予備機器に交換。</p>
+                    <p><strong>結果：</strong>5分遅れで上映開始。お客様に謝罪と説明を行い、クレームを回避。</p>
+                </div>
+
+                <div class="case-card">
+                    <h4>混雑時のレジ増設対応</h4>
+                    <p><strong>状況：</strong>大型作品公開初日で想定以上の来場者。既存レジでは対応しきれない状況。</p>
+                    <p><strong>対応：</strong>予備端末を急遽セットアップし、スタッフを追加配置。</p>
+                    <p><strong>結果：</strong>待ち時間を大幅に短縮し、お客様満足度を維持。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>ご連絡は以下のメールアドレスよりお願いいたします。</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a
+                        href="mailto:e.nakanishi.sys24@morijyobi.ac.jp">e.nakanishi.sys24@morijyobi.ac.jp</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SVGフィルター定義（フィルムグレイン効果） -->
+    <svg style="position: absolute; width: 0; height: 0;">
+        <defs>
+            <filter id="film-grain">
+                <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" />
+                <feColorMatrix type="saturate" values="0" />
+                <feBlend mode="multiply" in="SourceGraphic" />
+            </filter>
+        </defs>
+    </svg>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
